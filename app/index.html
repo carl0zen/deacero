@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"  > <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+
+        <meta name="viewport" content="user-scalable=no, width=device-width,initial-scale=1, maximum-scale=1">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Carlos Pérez Priego @carlosepp" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+
+
+        <link rel="stylesheet" href="css/app.css">
+        <script src="js/vendor/lab.js"></script>
+        <script>
+                //LAB js allows asynchronous js module loading
+                var queue = $LAB
+                    .script('js/vendor/modernizr.js')
+                    .script('js/vendor/jquery.js').wait(function(){
+
+                    })
+                    .script('js/vendor/hammer.js')
+                    .script('js/modules.js').wait()
+                    .script('js/app.js');
+        </script>
+    </head>
+    <body >
+        <div id="fb-root"></div>
+    
+        
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="header">
+
+            <div class="wrapper">
+                <div class="logo"></div>
+                <div class="search">
+                    <input type="text" placeholder="Buscar">
+                </div>
+
+            </div>
+            <div class="menu">
+                <div class="wrapper">
+                    <ul>
+                        <li><a href="posts.html">Avisos</a></li>
+                        <li><a href="posts.html">Comunidad</a></li>
+                        <li><a href="posts.html">Salud</a></li>
+                        <li><a href="posts.html">Seguridad </a></li>
+                        <li><a href="posts.html">Sustentabilidad</a></li>
+                        <li><a href="posts.html">Notas de Prensa</a></li>
+                    </ul>   
+                </div>          
+            </div>
+        </div>
+        <div class="content">
+            <div class="swipe" id="mainSlider">
+                <div class='swipe-wrap'>
+                    <div>
+                        <b>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <span class="category">Avisos</span>
+                                    <h2>Aviso importante!</h2>
+                                    <div class="icon"></div>
+                                </div>  
+
+                                <div class="cat-icon">
+                                    <img src="img/categories/icon-salud.png" alt="">
+                                </div>
+                            </div>
+                        </b>
+                    </div>
+                    <div>
+                        <b>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <span class="category">Comunidad</span>
+                                    <h2>Noticia de comunidad!</h2>
+                                    <div class="icon"></div>
+                                </div>  
+
+                                <div class="cat-icon">
+                                    <img src="img/categories/icon-salud.png" alt="">
+                                </div>
+                            </div>
+                        </b>
+                    </div>
+                    <div>
+                        <b>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <span class="category">Salud</span>
+                                    <h2>Cuidado con la Influenza!</h2>
+                                    <div class="icon"></div>
+                                </div>  
+
+                                <div class="cat-icon">
+                                    <img src="img/categories/icon-salud.png" alt="">
+                                </div>
+                            </div>
+                        </b>
+                    </div>
+                    <div>
+                        <b>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <span class="category">Seguridad</span>
+                                    <h2>Acerca de la Seguridad en Deacero</h2>
+                                    <div class="icon"></div>
+                                </div>  
+
+                                <div class="cat-icon">
+                                    <img src="img/categories/icon-salud.png" alt="">
+                                </div>
+                            </div>
+                        </b>
+                    </div>
+                    <div>
+                        <b>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <span class="category">Sustentabilidad</span>
+                                    <h2>La sustentabilidad comienza en casa</h2>
+                                    <div class="icon"></div>
+                                </div>  
+
+                                <div class="cat-icon">
+                                    <img src="img/categories/icon-salud.png" alt="">
+                                </div>
+                            </div>
+                        </b>
+                    </div>
+                    <div>
+                        <b>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <span class="category">Nota de prensa</span>
+                                    <h2>Esta es una nota de prensa</h2>
+                                    <div class="icon"></div>
+                                </div>  
+
+                                <div class="cat-icon">
+                                    <img src="img/categories/icon-salud.png" alt="">
+                                </div>
+                            </div>
+                        </b>
+                    </div>
+                </div>
+                <button class="icon prev" onclick='mySwipe.prev()'></button> 
+                <button class="icon next" onclick='mySwipe.next()'></button>
+                <ul id='position'>
+                  <li onclick="mySwipe.slide(0)" class='on'></li>
+                  <li onclick="mySwipe.slide(1)"></li>
+                  <li onclick="mySwipe.slide(2)"></li>
+                  <li onclick="mySwipe.slide(3)"></li>
+                  <li onclick="mySwipe.slide(4)"></li>
+                  <li onclick="mySwipe.slide(5)"></li>
+                </ul>
+            </div>
+
+            <div class="wrapper">
+                <div class="widgets" >
+                    <div>
+                        <div class="padder">
+                            <h4>Lo más reciente</h4>
+
+                            <div class="icon">
+                                <img src="img/icon-reciente.png" alt="">
+                            </div>
+                            <div class="text">
+                                Los 10 mandamientos para evitar el cambio climático
+                            </div>
+                            <a href="#" class="more">
+                                + Ver más
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="padder">
+                            <h4>Avisos</h4>
+                            <div class="icon">
+                                <img src="img/icon-avisos.png" alt="">
+                            </div>
+                            <div class="text">
+                                Entrega de polizas y credenciales 2013
+                            </div>
+                            <a href="#" class="more">
+                                + Ver más
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        
+
+        <div class="footer">
+            <div class="wrapper">
+                <div class="column">
+                    <div class="padder">
+                        <h4>Colabora</h4>
+                        <p>
+                            Es tu espacio, úsalo! Si te interesa colaborar con nosotros publicando notas de interés, puedes enviarnos tu material:
+    <a href="mailto:mail@mail.com">sustentabilidad@deacero.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="padder">
+                        <h4>Twitter</h4>
+                        <a class="twitter-timeline" href="https://twitter.com/GRUPODEACERO" data-widget-id="355375997547343872">Tweets by @GRUPODEACERO</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="padder">
+                        <h4>Facebook</h4>
+                    
+
+                            
+                        <div class="fb-follow" data-href="https://www.facebook.com/grupodeacero" data-show-faces="true" data-width="100%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">Deacero derechos reservados 2013</div>
+        </div>
+    </body>
+</html>

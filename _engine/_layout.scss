@@ -1,0 +1,92 @@
+/* ..-------------------------------------------------------...
+  |                         GRID DEFINITION                    |
+  |..--------------------------------------------------------..|*/
+
+$total-columns  : 12;
+$column-width   : 8em;
+$gutter-width   : $defaultPadding*2;
+$grid-padding   : $gutter-width;
+$show-grid-backgrounds  : false;
+
+
+
+.wrapper {
+	@include susy-grid-background;
+	// Establish our default 4-column grid container.
+	@include container;
+
+	// Create a media-query breakpoint at a min-width of 30em
+	// And use a larger 8-column grid within that media-query.
+	@include at-breakpoint(30em 8) {
+	  // Establish our new 8-column container.
+	  @include container;
+	}
+	.logo{
+		@include span-columns(9,12)
+	}	
+	.search{
+		@include span-columns(3 omega, 12);
+	}
+	
+	
+}
+.content .main-content{
+	@include span-columns(8,12);
+}
+#rightbar{
+	@include span-columns(4 omega, 12);
+	>div{
+		@include span-columns(12 omega,12);
+		
+	}
+
+	.text, h4, .icon, .more{
+		text-align: center;
+		@include span-columns(12 omega, 12);
+	}
+	.more{
+		float:none;
+		display: block;
+	}
+}
+.widgets{
+		@include span-columns(12 omega, 12);
+		> div:nth-child(2n-1), .left50{
+			@include span-columns(6, 12);
+		}
+		> div:nth-child(2n), .right50{
+			@include span-columns(6 omega, 12);
+		}
+	}
+
+.footer{
+	
+	.column{
+		
+
+		@include span-columns(4, 12);
+		&:nth-child(3n){
+			@include span-columns(4 omega, 12);
+		}
+		
+	}
+	
+}
+.title{
+	h1{
+		@include span-columns(6, 12);
+	}
+	img{
+		@include span-columns(6 omega, 12);
+	}
+}
+.post{
+	@include span-columns(12 omega,12);
+		>div:nth-child(2){
+			@include span-columns(5,12);
+		}
+		>div:nth-child(3){
+			@include span-columns(7 omega, 12);
+			
+		}
+}
